@@ -1,7 +1,7 @@
 # Sarge (aka Drill Sergeant)
 
 ## Install
-```
+```js
 npm install sarge
 ```
 
