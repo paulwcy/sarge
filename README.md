@@ -10,7 +10,7 @@ npm install sarge
 This example shows adding basic role checking to the hapi [basic auth example](https://github.com/spumko/hapi/blob/master/docs/Reference.md#basic-authentication). 
 
 
-```
+```js
 var Hapi = require('hapi');
 var Bcrypt = require('bcrypt');
 
@@ -33,10 +33,12 @@ var users = {
     },
 };
 
+
 var sarge_config = {
+    // request is the full request object
+    // config is the plugin.sarge config attached to the route
     handler: function (request, config, next) {
         var user = users[request.auth.credentials.username];
-        console.log(request.auth.credentials);
         if (user.role !== config.role) {
             next(Hapi.error.unauthorized("Not authorized"));
         }
@@ -88,8 +90,8 @@ server.start(function () {
 ```
 
 The first point to notice is that you need to add your authorization criteria to the route via 
-```
 
+```js
 config: {
     plugins: {
         sarge: {
