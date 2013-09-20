@@ -1,0 +1,29 @@
+{
+  "name": "sarge",
+  "version": "0.0.1",
+  "description": "Plugin to provide a consistent authorization interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:evilpacket/sarge.git"
+  },
+  "keywords": [
+    "hapi",
+    "plugin",
+    "authorization",
+    "rbac",
+    "role",
+    "authz"
+  ],
+  "author": "Adam Baldwin",
+  "license": "MIT",
+  "devDependencies": {
+    "hapi": "~1.11.1",
+    "lab": "~0.1.4",
+    "complexity-report": "~0.10.3",
+    "precommit-hook": "~0.3.5"
+  }
+}
