@@ -76,7 +76,7 @@ server.route({
         auth: 'simple',
         plugins: {
             sarge: {
-                role: 'admin'
+                role: 'admin' // This can be any data you want your handler to consume
             }
         }
     }
