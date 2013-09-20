@@ -1,7 +1,7 @@
 {
   "name": "sarge",
   "version": "0.0.2",
-  "description": "Plugin to provide a consistent authorization interface",
+  "description": "hapi.js plugin to make authorization on routes easy",
   "main": "index.js",
   "scripts": {
     "test": "make test"
