@@ -18,6 +18,9 @@
     "role",
     "authz"
   ],
+  "dependencies": {
+    "hoek": "2.x.x"
+  },
   "author": "Adam Baldwin",
   "license": "MIT",
   "devDependencies": {
